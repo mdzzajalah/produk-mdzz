@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPEN RESSELER DAN ADMIN PANEL</title>
+
+<style>
+:root {
+  --primary: #0d6efd;
+  --accent: #ffc107;
+  --dark: #0f172a;
+  --light: #f8fafc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* HERO */
+header {
+  background: linear-gradient(135deg, var(--primary), #001f3f);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+/* SECTION */
+section {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: var(--primary);
+}
+
+/* GRID LAYOUT */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+/* LIST */
+ul {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* SPEK & NOTE */
+.highlight {
+  background: #fff8e1;
+  padding: 20px;
+  border-left: 5px solid var(--accent);
+  border-radius: 8px;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--primary);
+  color: white;
+}
+
+.cta button {
+  background: var(--accent);
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cta button:hover {
+  opacity: 0.9;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* RESPONSIVE TEXT */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>OPEN RESSELER DAN ADMIN PANEL</h1>
+  <p>Solusi Panel Profesional & Siap Jualan</p>
+</header>
+
+<section>
+  <h2 class="section-title">PRICE</h2>
+  <div class="grid-2">
+    <div class="card">
+      <h3>RESSELER</h3>
+      <p class="price">5K</p>
+    </div>
+    <div class="card">
+      <h3>ADMIN PANEL</h3>
+      <p class="price">8K</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">BENEFIT</h2>
+  <div class="grid-2">
+    <div class="card">
+      <h3>RESSELER</h3>
+      <ul>
+        <li>CREATE PANEL SEPUASNYA</li>
+        <li>BISA JUALAN PANEL</li>
+        <li>JAMIN BALMOD (KALAU MAU BERUSAHA)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>ADMIN PANEL</h3>
+      <ul>
+        <li>BISA OPEN RESSELER</li>
+        <li>BISA CREATE PANEL SEPUASNYA</li>
+        <li>BISA JUALAN PANEL</li>
+        <li>JAMIN BALMOD (KALAU MAU BERUSAHA)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">SPEK</h2>
+  <div class="highlight">
+    <p>VPS RAM 16 CORE 4</p>
+    <p>FRESH BARU INSTALL SERVER MASIH SEPI</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">NOTE</h2>
+  <div class="highlight">
+    <strong>TIDAK MENERIMA BUYER C3</strong>
+  </div>
+</section>
+
+<div class="cta">
+  <h2>Siap Mulai?</h2>
+  <button onclick="location.href='https://t.me//mdzxxd'">Hubungi Kami</button>
+</div>
+
+<footer>
+  © 2026 Open Reseller Panel | 
+  <a href="#" onclick="hubungi()">Kontak</a>
+</footer>
+
+<script>
+function hubungi() {
+  alert("Silakan hubungi kami melalui WhatsApp / Telegram untuk pendaftaran.");
+}
+</script>
+
+</body>
+</html>
